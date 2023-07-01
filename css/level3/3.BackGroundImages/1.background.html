@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(spritual.jpg);
+            background-size: cover;
+        }
+           div{
+            display: inline-block;
+            height: 100px;
+            width:  100px;
+            margin: 10px;
+            
+        }
+        
+        #id1{
+            background-color: yellow;
+            background-image: url(mor.jpg);
+            /* No white is left cover whole area */
+            background-size: cover;
+        }
+        #id2{
+            background-color: pink;
+            /* If white space aviavble then img will repeat */
+            background-image: url(shreeRadhe.jpg);
+            background-size: contain;
+            
+        }
+        #id3{
+            /*  */
+            background-color: blue;
+            background-image: url(shivajiMaharaj.jpg);
+            background-size: auto;
+            
+        }
+        #id4{
+            background-color: green;
+
+            
+        }
+        #id5{
+            /* position based on users scroll  */
+            background-color: red;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="id1">my div 1</div>
+    <div id="id2">my div 2</div>
+    <div id="id3">my div 3</div>
+</body>
+</html>
