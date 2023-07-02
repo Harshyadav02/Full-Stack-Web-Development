@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            border: 2px solid blue;
+            height: 500px ;
+            /* By defalut */
+            flex-direction: row;
+            /* will come in coloumn */
+            flex-direction: column;
+            
+            /* reverse the div  (direction right to left =4,3,2,1)*/
+            flex-direction: row-reverse;
+            
+            /* direction down to up (4,3,2,1) */
+            flex-direction : column-reverse;
+        }
+        .div{
+            height: 150px;
+            width: 150px;
+            
+            
+            
+        }
+        #div1{
+            background-color: pink;
+
+        }
+        #div2{
+            background-color: darkseagreen;
+        }
+        #div3{
+            background-color: green;
+        }
+        #div4{
+            background-color: yellow;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="div1" class="div">my div 1</div>
+      <div id="div2" class="div">my div 2</div>
+      <div id="div3" class="div">my div 3</div>
+      <div id="div4" class="div">my div 4</div>
+    </div>
+  </body>
+</html>
