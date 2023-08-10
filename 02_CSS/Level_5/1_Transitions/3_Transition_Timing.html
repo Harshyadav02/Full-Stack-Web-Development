@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: yellow ;
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            transition-timing-function: linear;
+        }
+        /* On hover property of container will change */
+        #container:hover{
+            background-color: red;
+            border:2px solid yellow;
+            transition-duration: 2s;;
+
+            /* transtion timing */
+            transition-timing-function: steps(10);
+            transition-timing-function: ease-in; 
+            transition-timing-function: linear;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">THis a box</div>
+</body>
+</html>
