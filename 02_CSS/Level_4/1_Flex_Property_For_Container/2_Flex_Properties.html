@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            border: 2px solid blue;
+            height: 500px ;
+           /* flex-direction: column; */
+            /*  will start flex content from left to right  or TOp to down(in case of direction-flex:column */
+            justify-content: flex-start;
+            
+            
+            /*  flex content will shift to right  or shift at  down(in case of direction-flex:column  Note:-reverse nahi ho raha h ,reverse flex-direction me hota h*/
+            justify-content: flex-end;
+            
+            /* sb saman h space ke mmle me */
+            justify-content: space-evenly;
+            
+            /* items ke beech me space same rahegi pr flex conatiner and item ke beech space adhi rahegi */
+            justify-content: space-around;
+            
+            /* space items ke beec same rahegi pr 1, last item conatainer se chipak jainga */
+            justify-content: space-between;
+
+            /* cenetr me aaa jaiga sb kuch */
+            justify-content: center;
+            
+            /* align-items : alignment along the cross axis.*/
+            /* Will center the flex item to center w.r.t cross axis */
+            align-items: center;
+          
+            /* will start from top w.r.t cross axis*/
+            align-items: flex-start;
+
+            /* will start from buttom w.r.t to cross axis*/
+            align-items: end; 
+            
+            /* -------------------------------------------- */
+          /* align-content will handle space b/w rows of continer (Note :- row honi important h wrna ye vali property nahi chalegi*/
+            flex-wrap: wrap;
+            align-content: center;
+            align-content: start;
+            align-content: end;
+          }
+        .div{
+            height: 150px;
+            width: 150px;
+            
+            
+            
+        }
+        #div1{
+            background-color: pink;
+
+        }
+        #div2{
+            background-color: darkseagreen;
+        }
+        #div3{
+            background-color: green;
+        }
+        #div4{
+            background-color: yellow;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="div1" class="div">my div 1</div>
+      <div id="div2" class="div">my div 2</div>
+      <div id="div3" class="div">my div 3</div>
+      <div id="div4" class="div">my div 4</div>
+    </div>
+  </body>
+</html>
