@@ -1,0 +1,29 @@
+.container{
+    background-color: yellow;
+    border: 1px solid red;
+    height: 700px;
+    width: 700px;
+
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,100px);
+
+    grid-gap: 10px;
+
+   /* Align -item will work  on the cross axis*/
+
+   /* all the element will be placed at the top of grid */
+   align-items: start;
+
+   /* All the item will be palced at the bottom of the grid */
+   align-items: end;
+
+   /*  will stretch (by default)*/
+   align-items: stretch;
+
+}
+
+.box{
+    border: 1px solid yellow;
+    background-color: aqua;
+}
