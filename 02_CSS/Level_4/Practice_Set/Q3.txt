@@ -1,0 +1,4 @@
+Which has higher priority - align-items or align-self?
+
+
+ANSWER = Align_SELF 
