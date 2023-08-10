@@ -1,0 +1,20 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    /* Inline has a drawback it doesn't provide us  top and bottum margin nither width and height*/
+    display: inline;
+
+    /* To cure for the inline drawback use inline-block */
+    display: inline-block;
+}
+#div1{
+    background-color: yellow;
+}
+#div2{
+    background-color: pink;
+}
+#div3{
+    background-color: green;
+}
