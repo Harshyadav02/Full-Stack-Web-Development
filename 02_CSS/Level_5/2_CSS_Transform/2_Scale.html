@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Note we can apply any property of transform on hover */
+        #container{
+            background-color: yellow ;
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            transition: all 2s ease-in;
+            /* scale mtlb bdna ya bada hona if scale is 1 then normal , 2 means double along x and y axis*/
+            transform: scale(2);
+
+           
+        }
+      #container:hover{
+         /* scaling along axis */
+            /* x axis me 4 and y me 2 rahega */
+            
+            transform :scale(4,2);
+
+            transform: rotate(120deg);
+            background-color: pink;
+           
+      }
+       
+    </style>
+</head>
+<body>
+    <div id="container">THis a box</div>
+</body>
+</html>
