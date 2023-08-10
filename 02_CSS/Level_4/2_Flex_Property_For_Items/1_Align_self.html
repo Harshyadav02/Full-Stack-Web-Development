@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            border: 2px solid blue;
+            height: 500px ;
+          }
+        .div{
+            height: 150px;
+            width: 150px;
+            
+            
+        }
+        #div1{
+            background-color: pink;
+            align-self: center;
+          
+
+        }
+        #div2{
+            /* flex-grow mee hum jitni value dete h unta vo grow ho jata h and other items acquire the white space  , if two item are given same  value (flex-grow) then they will acquire equal space*/
+            background-color: darkseagreen;
+            flex-grow: 6;
+            
+            
+        }
+        #div3{
+            background-color: green;
+            /* flex shrink ka concept ye h ki kisi item ko jb hum shink value dete h  to utni speed se shrink hoga rather then other for example ek item ko 1 value dusre item ko 3 value di to jis item ki 3 value h vo 3guna fast shrink hoga rather then one vale se*/
+            flex-shrink: 3;
+            
+
+        }
+        #div4{
+            background-color: yellow;
+           
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="div1" class="div">my div 1</div>
+      <div id="div2" class="div">my div 2</div>
+      <div id="div3" class="div">my div 3</div>
+      <div id="div4" class="div">my div 4</div>
+    </div>
+  </body>
+</html>
